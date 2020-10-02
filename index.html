@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piotr Florczak - Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <a href="/">
+          <img src="./floreq-logo.svg" alt="" class="logo-image" />
+          <div class="logo-info">
+            <strong>Piotr Florczak</strong><span>Floreq</span>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="" class="nav-link">O mnie</a>
+        <a href="" class="nav-link">Blog</a>
+        <a href="" class="nav-link">Kontakt</a>
+      </div>
+    </nav>
+    <article>
+      <h1>Agenda jako linia czasu</h1>
+      <p class="tagline">
+        Fragment przeze mnie tworzonej funkcjonalności strony internetowej w
+        WordPressie.
+      </p>
+      <p class="attention">
+        Moim celem było zaprezentowanie zbioru wydarzeń (np. prelekcja, wykład
+        itp.) w dwóch formach. Pierwsza, pozwalająca przedstawić zdarzenia w
+        kolejności występowania na linii czasu w uproszczonej postaci (czas,
+        autor). Generowana na podstawie drugiej formy, zbioru zawierającego
+        szczegółowe informacje (czas i miejsce, tytuł, autor, krótki opis).
+      </p>
+      <figure>
+        <img src="./thumbnail.png" alt="" />
+        <figcaption>
+          Rysunek 1: Agenda podzielona na dwie części. Pierwsza zawiera dwie
+          linie czasu (wykład, warsztaty). Druga część składa się z dwóch
+          zbiorów wykładów i warsztatów. Zawiera ona szczegółowe informacje o
+          wydarzeniach.
+        </figcaption>
+      </figure>
+      <h2>Spis treści</h2>
+      <ol class="table-of-contents">
+        <li><a href="">Wstęp</a></li>
+        <li><a href="">Utworzenie zbioru wydarzeń</a></li>
+        <li><a href="">Zakodowanie wyglądu linii czasu</a></li>
+        <li><a href="">Dodanie funkcjonalności generowania linii czasu</a></li>
+        <li><a href="">Podsumowanie</a></li>
+      </ol>
+      <h2>Wstęp</h2>
+      <p>
+        Chciałbym zaznaczyć, że przed przystąpieniem do HTML-a itp. miałem już
+        gotowy projekt graficzny tworzonej strony.
+      </p>
+      <p>
+        Przed kodowaniem musiałem się zastanowić jak można otworzyć projekt. Na
+        początku zakładałem, że użyję React.js do budowy całej strony i dzięki
+        API będę mógł wyciągać potrzebne informacje z bazy danych. A komponenty
+        Reacta wykonałby resztę. Natomiast zdecydowałem się jednak na
+        WordPressa.
+      </p>
+      <p>
+        Ostatecznie wybrany przeze mnie CMS pozwala na edytowanie treści strony
+        w panelu administracyjnym. Nie chciałem zmuszać osoby wprowadzającej
+        dane aby wpisywała informacje w dwa różne miejsca (tj. do linii czasu i
+        do zbioru wydarzeń). Dlatego musiałbym wygenerować jeden element na
+        podstawie drugiego. Teraz jak to zrobić?
+      </p>
+      <p>
+        Przypomniałem sobie, że istnieje DOM (Document Object Model), a to jest
+        nic innego jak API. Odwzorowuje on całą stronę w przystępny sposób aby
+        nią można było zarządzać, modyfikować. Więc zostaje teraz tylko stworzyć
+        funkcję, która na podstawie danych z DOM-u wygeneruje linie czasu.
+      </p>
+      <p>Całość kodu można znaleźć <a href="">tutaj</a>.</p>
+      <h2>Utworzenie zbioru wydarzeń</h2>
+    </article>
+  </body>
+</html>

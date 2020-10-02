@@ -1,0 +1,132 @@
+:root {
+  --main-black: #222;
+  --main-accent: #ff5e5b;
+  --margin: 0.8rem;
+  --root-font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --root-font-size: 16px;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+nav,
+article {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 0 var(--margin);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  margin-top: var(--margin);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+.nav-link {
+  margin-left: calc(var(--margin) * 2);
+}
+
+.logo-container > a {
+  display: flex;
+}
+
+.logo-image {
+  margin-bottom: 0;
+  margin-right: var(--margin);
+  height: 2.4rem;
+  width: 2rem;
+}
+.logo-info > span {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+.logo-info > strong {
+  display: block;
+  margin-top: 0.3rem;
+  line-height: 1rem;
+}
+
+html {
+  font-family: "PT Serif", serif;
+  font-size: var(--root-font-size);
+  color: var(--main-black);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  margin-top: calc(var(--margin) * 5);
+  font-size: 3.5rem;
+  line-height: 3.9rem;
+  letter-spacing: -0.05rem;
+}
+
+h1,
+p,
+ul,
+ol,
+figure,
+img,
+.tagline {
+  margin-bottom: calc(var(--margin) * 2);
+}
+
+h2 {
+  margin-top: calc(var(--margin) * 5);
+  margin-bottom: var(--margin);
+  font-size: 1.7rem;
+  letter-spacing: -0.025rem;
+  line-height: 2.4rem;
+}
+
+.attention {
+  font-size: 1.2rem;
+}
+
+p,
+figcaption,
+ul,
+ol {
+  line-height: 1.6rem;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.table-of-contents {
+  padding-left: 1rem;
+  color: var(--main-accent);
+}
+
+a {
+  color: var(--main-accent);
+}
