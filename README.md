@@ -1,1 +1,1 @@
-# floreq-blog
+# [floreq-blog](https://floreq.github.io/floreq-blog/)
